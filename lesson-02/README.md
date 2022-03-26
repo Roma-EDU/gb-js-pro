@@ -34,3 +34,42 @@
    * **Решение:** Добавил базовый класс `Food` и несколько наследников, см. [js/hamburger.js](https://github.com/Roma-EDU/gb-js-pro/blob/master/lesson-02/js/hamburger.js)
 
 **Вопрос** во время лекции про наследование: вот пример кода на C#, когда обращение идёт к базовому классу, но выполняется код наследника [Inheritance.cs](https://github.com/Roma-EDU/gb-js-pro/blob/master/lesson-02/Inheritance.cs)
+**Решение:** пример на js работает также
+```html
+<meta charset="utf-8">
+<script>
+  class Person{
+    constructor(name,year) {//конструктор это метод, который вызывается при создании класса
+      this.name = name;
+      this.year = year;
+      this.age = new Date().getFullYear() - year;
+    }
+
+    getInfo(){
+      return `${this.name} родился в ${this.year}, ему ${this.age} лет`;
+    }
+
+    showInfo(){
+      console.log(this.getInfo());
+    }
+  }
+
+  /**
+   * Если в базовом классе есть конструктор с параметрми, то в классе потомке
+   * обязаательно делаем конструктор с параметрами и вызываем базовый конструктор через super
+   */
+  class Teacher extends Person {
+    constructor(name, year,subject) {
+      super(name, year);
+      this.subject = subject;
+    }
+
+    getInfo() {
+      return `${super.getInfo()}. ${this.name} преподает предмент ${this.subject}`;
+    }
+  }
+
+  let teacher = new Teacher("Иван",1980,"Физика");
+  teacher.showInfo();
+</script>
+```
