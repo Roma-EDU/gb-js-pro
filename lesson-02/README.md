@@ -32,3 +32,5 @@
    ```
    
    * **Решение:** Добавил базовый класс `Food` и несколько наследников, см. [js/hamburger.js](https://github.com/Roma-EDU/gb-js-pro/blob/master/lesson-02/js/hamburger.js)
+
+**Вопрос** во время лекции про наследование: вот пример кода на C#, когда обращение идёт к базовому классу, но выполняется код наследника [Inheritance.cs](https://github.com/Roma-EDU/gb-js-pro/blob/master/lesson-02/Inheritance.cs)
