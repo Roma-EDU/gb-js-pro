@@ -1,0 +1,14 @@
+<meta charset="UTF8" />
+<div>
+    <h2>Задача 1:</h2>
+    <p id="p1"></p>
+    <hr>
+    <h2>Задача 2:</h2>
+    <p id="p2"></p>
+</div>
+
+<script src="js/replace.js" ></script>
+<script>
+    document.querySelector('#p1').innerHTML = Replacer.replaceApostropheSimple(ORIGINAL_TEXT);
+    document.querySelector('#p2').innerHTML = Replacer.replaceApostropheSmart(ORIGINAL_TEXT);
+</script>
