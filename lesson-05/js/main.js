@@ -7,6 +7,7 @@ const app = new Vue({
         products: [],
         filtered: [],
         imgCatalog: 'https://via.placeholder.com/200x150',
+        imgCart: 'https://via.placeholder.com/60x60',
         userSearch: '',
         showCart: false,
         cartItems: [],
