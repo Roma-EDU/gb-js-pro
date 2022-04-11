@@ -1,0 +1,16 @@
+[
+    {
+        "quantity": 1,
+        "id_product": 124,
+        "product_name": "Клавиатура",
+        "price": 1600,
+        "image": "img/keyboard.jpg"
+    },
+    {
+        "quantity": 1,
+        "id_product": 123,
+        "product_name": "Ноутбук",
+        "price": 45600,
+        "image": "img/notebook.jpg"
+    }
+]
